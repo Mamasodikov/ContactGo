@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/private_item"
+        android:title="Local"
+        android:icon="@drawable/ic_baseline_person_outline_24"/>
+    <item
+        android:id="@+id/public_item"
+        android:title="Ommaviy"
+        android:icon="@drawable/ic_baseline_public_24"/>
+
+
+</menu>

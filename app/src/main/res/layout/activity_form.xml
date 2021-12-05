@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form"
+    android:background="#CCE4FF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:rotation="180"
+        android:scaleType="center"
+        android:src="@drawable/wave_4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wave" />
+
+    <LinearLayout
+        android:id="@+id/header_title_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageAvaAdd"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ava_material" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:text="Kontakt qo'shish"
+            android:textColor="@color/Dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/cuprum_bold"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fullInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_title_add"
+        android:layout_centerHorizontal="true"
+       android:layout_margin="15dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_baseline_account_circle_24" />
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="Ism"
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_baseline_account_circle_24" />
+
+                <EditText
+                    android:id="@+id/sname_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="Familiya "
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/ic_baseline_account_circle_24" />
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="Shaxs haqida qisqa ma'lumot"
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/phone_logo" />
+
+                <EditText
+                    android:id="@+id/phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="Telefon raqamini kiriting "
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/telegram_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="t.me/"
+                    android:textColor="@color/Dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/soc_tel_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint=" @ siz username kiriting"
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/facebook_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="facebook.com/"
+                    android:textColor="@color/Dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/soc_fac_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="username kiriting"
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/instagram_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="instagram.com/"
+                    android:textColor="@color/Dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/soc_ins_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:hint="username kiriting"
+                    android:singleLine="true"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullInfo"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Dark"
+        android:text="Saqlash"
+        app:cornerRadius="20dp" />
+
+
+</RelativeLayout>

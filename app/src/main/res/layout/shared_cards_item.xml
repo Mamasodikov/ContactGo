@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:backgroundTint="#FFFFFF"
+    android:elevation="6dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    app:cardCornerRadius="6dp"
+    android:id="@+id/sharedCardsCard">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/card_header"/>
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageAva"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ava_material" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ava_status" />
+
+            <TextView
+                android:id="@+id/fullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="35dp"
+                android:text="Mamasodiqov Muhammad Aziz"
+                android:textColor="#005687"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/imageAva"
+                android:layout_toStartOf="@id/qrcode"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullName"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imageAva"
+                android:layout_toStartOf="@id/qrcode"
+                android:text="Android dasturchisi"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/qrcode"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/qr_not" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:background="#CCE4FF"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/phone_logo" />
+
+                <TextView
+                    android:id="@+id/phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="+998 90 915 37 25"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/telegram_logo" />
+
+                <TextView
+                    android:id="@+id/soc_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="t.me/mamasodikoff"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/facebook_logo" />
+
+                <TextView
+                    android:id="@+id/soc_fac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="facebook.com/imrealcosmos"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/instagram_logo" />
+
+                <TextView
+                    android:id="@+id/soc_ins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cuprum_bold"
+                    android:text="instagram.com/imrealcosmos"
+                    android:textColor="@color/Dark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/info"
+            android:src="@drawable/card_header" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/about"
+            android:title="Ilova haqida"
+            android:icon="@drawable/ic_baseline_info_24"/>
+        <item
+            android:id="@+id/exit"
+            android:title="Chiqish"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </group>
+
+    <item android:title="Biz bilan aloqa">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_screen_share_24"
+                android:title="Vizitkamni tarqatish" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_baseline_support_agent_24"
+                android:title="Bizga yozing" />
+        </menu>
+    </item>
+</menu>

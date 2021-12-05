@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "827305290877",
+    "firebase_url": "https://contactgo-a0eac-default-rtdb.firebaseio.com",
+    "project_id": "contactgo-a0eac",
+    "storage_bucket": "contactgo-a0eac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827305290877:android:6bf4ae16130fdf5141d514",
+        "android_client_info": {
+          "package_name": "com.mamasodikov.contactgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827305290877-008rvar3ou6lnfi3t0g9ep2ktlbkfgj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGdOrPf-AxgSzize6f7nEleyM7VeKrV8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827305290877-008rvar3ou6lnfi3t0g9ep2ktlbkfgj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
